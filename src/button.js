@@ -12,7 +12,6 @@ function clickTweet(){
     document.getElementById('list-tweet').appendChild(lastTweet);
     document.getElementById('formTweet').reset();
     }
-//listTweet.insertBefore(lastTweet, listTweet[0]);
 };
 document.getElementById('msg-tweet').addEventListener('input',enableTweet);
 function enableTweet(){
