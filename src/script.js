@@ -2,15 +2,15 @@ document.getElementById('msg-tweet').addEventListener('input',count);
 function count(){
     let lengthTweet= document.getElementById('msg-tweet').value.length;
     document.getElementById('charNum').textContent= 140 - lengthTweet;
-    if(lengthTweet < 121){
-        document.getElementById('charNum').style.color= "black";
+    if(lengthTweet < 120){
+        document.getElementById('charNum').style.color= "white";
     }if(lengthTweet > 120){
-        document.getElementById('charNum').style.color= "blue";
-    }if(lengthTweet > 130 && lengthTweet < 140){
+        document.getElementById('charNum').style.color= "#FDA2B1";
+    }if(lengthTweet > 130){
         document.getElementById('charNum').style.color= "orange";
     }if(lengthTweet > 140){
-        document.getElementById('charNum').style.color= "red";
-    }
+        document.getElementById('charNum').style.color= "#FC0D2C";
+    };
 };
 (document.querySelector('textarea')).addEventListener('keydown', autosize);
 function autosize(){

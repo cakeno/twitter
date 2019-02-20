@@ -4,17 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Twitter</title>
-    <link href="src/style.css" rel="stylesheet" type="text/css" />
+		<link href="src/style.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-        <textarea class="msg-tweet" id="msg-tweet" placeholder="mensagem"></textarea>
-        <p><span id="charNum">140</span> caracteres restantes</p>
-        <button class="btn-tweet" id="btn-tweet" type="submit" disabled>TWITTAR</button>
-        <section class="timeline-tweet" id="timeline-tweet">
-            <ul class="list-tweet" id="list-tweet">
-            </ul>
-        </section>
-    </form>
+		<header class="header"><i class="fab fa-twitter"></i></header>
+		<main class="main">
+			<div id="divMain" class="divMain">
+				<div>
+					<form class="formTweet" id="formTweet">
+						<p class="p-msg-tweet"><span id="charNum">140</span> caracteres restantes</p>
+						<textarea class="msg-tweet" id="msg-tweet" placeholder="mensagem" rows="1"></textarea>
+						<button class="btn-tweet" id="btn-tweet" type="submit" disabled>TWITTAR</button>
+					</form>
+				</div>
+				<section class="timeline-tweet" id="timeline-tweet">
+					<ul class="list-tweet" id="list-tweet">
+					</ul>
+				</section>
+			</div>
+		</main>
+  <footer></footer>
     <script src="src/script.js"></script>
     <script src="src/button.js"></script>
   </body>
