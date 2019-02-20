@@ -1,16 +1,16 @@
 
 document.getElementById('msg-tweet').addEventListener('input',count);
 function count(){
-    let msgTweet= document.getElementById('msg-tweet').value.length;
-    document.getElementById('charNum').innerHTML= msgTweet;
-    if(msgTweet < 121){
+    let lengthTweet= document.getElementById('msg-tweet').value.length;
+    document.getElementById('charNum').innerHTML= lengthTweet;
+    if(lengthTweet < 121){
         document.getElementById('charNum').style.color= "black";
-    }if(msgTweet > 120){
+    }if(lengthTweet > 120){
         document.getElementById('charNum').style.color= "green";
-    }if(msgTweet > 130 && msgTweet < 140){
+    }if(lengthTweet > 130 && lengthTweet < 140){
         document.getElementById('charNum').style.color= "blue";
-    }if(msgTweet > 140){
+    }if(lengthTweet > 140){
         document.getElementById('charNum').style.color= "red";
-        document.getElementById('charNum').innerHTML= 140 - msgTweet;
+        document.getElementById('charNum').innerHTML= 140 - lengthTweet;
     }
 };
