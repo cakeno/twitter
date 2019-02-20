@@ -1,7 +1,7 @@
 document.getElementById('msg-tweet').addEventListener('input',count);
 function count(){
     let lengthTweet= document.getElementById('msg-tweet').value.length;
-    document.getElementById('charNum').innerHTML= lengthTweet;
+    document.getElementById('charNum').textContent= lengthTweet;
     if(lengthTweet < 121){
         document.getElementById('charNum').style.color= "black";
     }if(lengthTweet > 120){
@@ -10,7 +10,7 @@ function count(){
         document.getElementById('charNum').style.color= "blue";
     }if(lengthTweet > 140){
         document.getElementById('charNum').style.color= "red";
-        document.getElementById('charNum').innerHTML= 140 - lengthTweet;
+        document.getElementById('charNum').textContent= 140 - lengthTweet;
     }
 };
 (document.querySelector('textarea')).addEventListener('keydown', autosize);
@@ -21,3 +21,6 @@ function autosize(){
     el.style.cssText = 'height:' + el.scrollHeight + 'px';
 },0);
 };
+var today = new Date();
+var date= today.getHours()+":"+today.getMinutes();
+const btnTweet= document.getElementById('btn-tweet');
