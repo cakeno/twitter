@@ -3,7 +3,7 @@ document.getElementById('btn-tweet').addEventListener('click',clickTweet);
 function clickTweet(){
     const lastTweet= document.createElement('li');
     const msgTweet= document.getElementById('msg-tweet').value;
-    let lengthTweet= document.getElementById('msg-tweet').value.length;
+    let lengthTweet= msgTweet.length;
     if(lengthTweet === 0 || lengthTweet > 140){
         btnTweet.disabled= true;
     }else{
@@ -17,9 +17,8 @@ function clickTweet(){
 };
 document.getElementById('msg-tweet').addEventListener('input',enableTweet);
 function enableTweet(){
-const lastTweet= document.createElement('li');
 const msgTweet= document.getElementById('msg-tweet').value;
-let lengthTweet= document.getElementById('msg-tweet').value.length;
+let lengthTweet= msgTweet.length;
     btnTweet.disabled= false;
     if(lengthTweet === 0 || lengthTweet > 140){
         btnTweet.disabled= true;

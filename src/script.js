@@ -1,4 +1,3 @@
-
 document.getElementById('msg-tweet').addEventListener('input',count);
 function count(){
     let lengthTweet= document.getElementById('msg-tweet').value.length;
@@ -13,4 +12,12 @@ function count(){
         document.getElementById('charNum').style.color= "red";
         document.getElementById('charNum').innerHTML= 140 - lengthTweet;
     }
+};
+(document.querySelector('textarea')).addEventListener('keydown', autosize);
+function autosize(){
+  let el = this;
+  setTimeout(function(){
+    el.style.cssText = 'height:auto; padding:0';
+    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+},0);
 };
