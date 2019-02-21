@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     border: 0;
+    font-family: Arial, sans-serif;
 }
 body{
     background-color: #E6ECF0;
@@ -60,10 +61,14 @@ textarea{
 }
 .msg-tweet:hover{
     border: 2px solid #7AC943;
-    box-shadow: 0px 0px 10px 0px #8EB3F4;
+    box-shadow: 0px 0px 10px 0px #7AC943;
 }
 .msg-tweet:focus{
     border: 2px solid #7AC943;
+    box-shadow: 0px 0px 10px 0px #7AC943;
+}
+.msg-tweet::placeholder{
+    color: #29A3EF;
 }
 .p-msg-tweet{
     cursor: default;
