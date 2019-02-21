@@ -6,12 +6,13 @@ function clickTweet(){
     let msgTweet= document.getElementById('msg-tweet').value;
     let dateTweet= date+' '+msgTweet;
     let lengthTweet= msgTweet.length;
-    if(lengthTweet === 0 || lengthTweet > 140){
-        btnTweet.disabled= true;
+    if(lengthTweet !== 0 || lengthTweet < 140){
+        lastTweet.appendChild(document.createTextNode(dateTweet));
+        document.body.appendChild(lastTweet);
+        document.getElementById('list-tweet').appendChild(lastTweet);
+        document.getElementById('charNum').textContent = 140;
     }else{
-    lastTweet.appendChild(document.createTextNode(dateTweet));
-    document.body.appendChild(lastTweet);
-    document.getElementById('list-tweet').appendChild(lastTweet);
+        btnTweet.disabled= true;
     }
     document.getElementById('formTweet').reset();
 };

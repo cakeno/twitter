@@ -1,9 +1,9 @@
 document.getElementById('msg-tweet').addEventListener('input',count);
 function count(){
     let lengthTweet= document.getElementById('msg-tweet').value.length;
-    document.getElementById('charNum').textContent= 140 - lengthTweet;
+    document.getElementById('charNum').textContent = 140 - lengthTweet;
     if(lengthTweet < 120){
-        document.getElementById('charNum').style.color= "white";
+        document.getElementById('charNum').style.color= "#157EFB";
     }if(lengthTweet > 120){
         document.getElementById('charNum').style.color= "#FDA2B1";
     }if(lengthTweet > 130){

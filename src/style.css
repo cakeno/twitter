@@ -7,7 +7,7 @@ textarea{
     overflow: hidden;
 }
 .header{
-    background-color: #6993F0;
+    background-color: #157EFB;
     text-align: center;
 }
 .header .fab{
@@ -39,8 +39,14 @@ textarea{
     border: 2px solid #A2BFF4;
     font-size: 20px;
     resize: none;
+    box-shadow: 0px 0px 10px 0px #8EB3F4;
+    outline: 0;
 }
 .msg-tweet:hover{
+    border: 2px solid #18bc9c;
+    box-shadow: 0px 0px 10px 0px #8EB3F4;
+}
+.msg-tweet:focus{
     border: 2px solid #18bc9c;
 }
 .timeline-tweet{
@@ -52,16 +58,23 @@ textarea{
     text-decoration: none;
     padding: 10px 2em;
     font-size: 15px;
-    color: white;
+    color: #157EFB;
 }
 .btn-tweet{
-    cursor: pointer;
     text-decoration: none;
-    background-color: #6993F0;
+    background-color: #2992FC;
     text-align: center;
     font-size: 20px;
     color: white;
     border-radius: 30px;
     padding: 15px 30px;
     margin: 10px;
+    outline: 0;
+}
+.btn-tweet:disabled{
+    background-color: #8EB3F4;
+}
+.btn-tweet:enabled{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #157EFB;
 }
