@@ -1,9 +1,17 @@
+function leftZeros(number){
+	if(number < 10){
+			newNumber= '0' + number
+			return newNumber
+	}else{
+		return number
+	}
+}
 function enableTweet(){
 	let lengthTweet= document.getElementById('msg-tweet').value.length;
-	if(lengthTweet !== 0 || lengthTweet <= 140){
-		btnTweet.disabled= false;
-	}else{
+	if(lengthTweet === 0 || lengthTweet > 140){
 		btnTweet.disabled= true;
+	}else{
+		btnTweet.disabled= false;
 	}
 }
 function count(){
@@ -26,8 +34,8 @@ function autosize(){
     el.style.cssText = 'height:' + el.scrollHeight + 'px';
 },0);
 }
-document.getElementById('msg-tweet').addEventListener('keydown', autosize);
+document.getElementById('msg-tweet').addEventListener('keydown',autosize)
 document.getElementById('msg-tweet').addEventListener('input',()=>{
-	enableTweet();
 	count();
+	enableTweet();
 })

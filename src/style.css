@@ -15,7 +15,7 @@ li{
     color: white;
     padding: 1em 1em;
     margin: 1em 1em;
-    background-color: #A6D9F7;
+    background-color: #29A3EF;
     border-radius: 10px;
 }
 textarea{
@@ -107,22 +107,4 @@ textarea{
     padding: 1em;
     max-width: inherit;
     min-width: inherit;
-}
-.speech-bubble {
-	position: relative;
-	background: #00aabb;
-	border-radius: 35px;
-}
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 20%;
-	width: 0;
-	height: 0;
-	border: 0.688em solid transparent;
-	border-bottom-color: opacity: .3;
-	border-top: 0;
-	margin-left: -0.687em;
-	margin-top: -0.687em;
 }
