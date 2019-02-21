@@ -1,15 +1,16 @@
-document.getElementById('msg-tweet').addEventListener('input',count);
+const tweet= document.getElementById('msg-tweet');
+tweet.addEventListener('input',count);
 function count(){
-    let lengthTweet= document.getElementById('msg-tweet').value.length;
+    let lengthTweet= tweet.value.length;
     document.getElementById('charNum').textContent = 140 - lengthTweet;
     if(lengthTweet < 120){
-        document.getElementById('charNum').style.color= "#157EFB";
+        document.getElementById('p-msg-tweet').style.color= "#157EFB";
     }if(lengthTweet > 120){
-        document.getElementById('charNum').style.color= "#FDA2B1";
+        document.getElementById('p-msg-tweet').style.color= "#FDA2B1";
     }if(lengthTweet > 130){
-        document.getElementById('charNum').style.color= "orange";
+        document.getElementById('p-msg-tweet').style.color= "orange";
     }if(lengthTweet > 140){
-        document.getElementById('charNum').style.color= "#FC0D2C";
+        document.getElementById('p-msg-tweet').style.color= "#FC0D2C";
     };
 };
 (document.querySelector('textarea')).addEventListener('keydown', autosize);
