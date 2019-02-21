@@ -6,15 +6,16 @@
 body{
     background-color: #E6ECF0;
 }
-li{
-    white-space: pre;
-    list-style-type: none;
-    color: white;
-    background-color: #29A3EF;
-    max-width: 100%;
+ul{
+    list-style: none;
     padding: 1em 1em;
     border-radius: 10px;
+    background-color: #29A3EF;
     margin: 1em 1em;
+}
+li{
+    white-space: pre;
+    color: white;
 }
 textarea{
     overflow: hidden;
@@ -28,8 +29,8 @@ textarea{
 }
 .header .fab{
     color: white;
-    font-size: 10vw;
-    margin: 3vw;
+    font-size: 50px;
+    margin: 20px;
 }
 .main{
     width: 100%;
@@ -43,11 +44,8 @@ textarea{
     flex-wrap: nowrap;
 }
 .formTweet{
-    padding: 25% 3em 1em 3em;
+    padding: 7em 3em 1em 3em;
     background-color: #E8F5FD;
-}
-.timeline-begin{
-    padding: 1em;
 }
 .msg-tweet{
     cursor: pointer;
@@ -96,8 +94,15 @@ textarea{
 }
 .timeline-tweet{
     padding: 1em 2em;
-    min-height: 85vw;
+    min-height: 25vw;
+    max-width: inherit;
+    min-width: inherit;
     background-color: white;
+}
+.timeline-begin{
+    padding: 1em;
+    max-width: inherit;
+    min-width: inherit;
 }
 .speech-bubble {
 	position: relative;
@@ -116,7 +121,4 @@ textarea{
 	border-top: 0;
 	margin-left: -0.687em;
 	margin-top: -0.687em;
-}
-.hide{
-    display: none;
 }
