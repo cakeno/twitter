@@ -8,14 +8,12 @@ body{
 }
 ul{
     list-style: none;
-    padding: 1em 1em;
-    border-radius: 10px;
-    background-color: #29A3EF;
-    margin: 1em 1em;
 }
 li{
     white-space: pre;
     color: white;
+    padding: 1em 1em;
+    margin: 1em 1em;
 }
 textarea{
     overflow: hidden;
