@@ -15,6 +15,10 @@ function clickTweet(){
     };
     document.getElementById('formTweet').reset();
 };
+document.getElementById('btn-tweet').addEventListener('click',hideTimelineB);
+function hideTimelineB(){
+    document.getElementById('timeline-begin').style.cssText= 'display: none;';
+};
 tweet.addEventListener('input',enableTweet);
 function enableTweet(){
 let msgTweet= tweet.value;
@@ -23,5 +27,5 @@ let lengthTweet= msgTweet.length;
         btnTweet.disabled= false;
     }else{
         btnTweet.disabled= true;
-    };
+    }
 };
