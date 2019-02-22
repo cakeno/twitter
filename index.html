@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Twitter</title>
-		<link href="src/style.css" rel="stylesheet" type="text/css"/>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  </head>
-  <body>
-		<header class="header"><i class="fab fa-twitter"></i></header>
-		<main class="main">
-			<div id="divMain" class="divMain">
-				<div>
-					<form id="formTweet" class="formTweet">
-						<p id="p-msg-tweet" class="p-msg-tweet"><span id="charNum">140</span> caracteres restantes</p>
-						<textarea id="msg-tweet" class="msg-tweet" placeholder="O que está acontecendo?" rows="1" ></textarea>
-						<button id="btn-tweet" class="btn-tweet" type="submit" disabled>Tweetar</button>
-					</form>
-				</div>
-				<section id="timeline-tweet" class="timeline-tweet">
-					<section id="user-profile" class="user-profile">
-						<div id="cover-profile" class="cover-profile"></div>
-						<div id="photo-username" class="photo-username"></div>
-						<div id="name-username" class="name-username"></div>
-						<div id="username" class="username"></div>
-						<div id="numer-tweets" class="numer-tweets"></div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Twitter</title>
+	<link href="src/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+	<header class="header"><i class="fab fa-twitter"></i></header>
+	<main class="main">
+		<div id="divMain" class="divMain">
+				<section id="user-profile" class="user-profile">
+					<!-- <div id="cover-profile" class="cover-profile"></div> -->
+					<div id="photo-username" class="photo-username"></div>
+					<section id="space-username" class="space-username">
+						<div id="name-username" class="name-username">
+							<h2 id="name" class="name">Complete Name<h2>
+									<h1 id="username" class="username">@username<h1>
+						</div>
+						<div id="number-tweets" class="number-tweets">
+								<h1>Tweets<h1>
+								<p id= "qnt-tweets" class= "qnt-tweets">0<p>
+						</div>
 					</section>
-					<section id="timeline-begin" class="timeline-begin">
-							<h1>Como? Nenhum Tweet ainda?</h1><br>
-							<p>Esta timeline vazia não ficará assim por muito mais tempo. Comece a escrever mensagens agora e você verá os Tweets aparecerem aqui.</p>
-						</section>
-						<ul class="list-tweet" id="list-tweet">
-						</ul>
 				</section>
-			</div>
-		</main>
-  <footer></footer>
-    <script src="src/script.js"></script>
-    <script src="src/button.js"></script>
-  </body>
+				<form id="formTweet" class="formTweet">
+					<p id="p-msg-tweet" class="p-msg-tweet"><span id="charNum">140</span> caracteres restantes</p>
+					<textarea id="msg-tweet" class="msg-tweet" placeholder="O que está acontecendo?" rows="1"></textarea>
+					<button id="btn-tweet" class="btn-tweet" type="submit" disabled>Tweetar</button>
+				</form>
+			<section id="timeline-tweet" class="timeline-tweet">
+				<section id="timeline-begin" class="timeline-begin">
+					<h1>Como? Nenhum Tweet ainda?</h1><br>
+					<p>Esta timeline vazia não ficará assim por muito mais tempo. Comece a escrever mensagens agora e você verá os
+						Tweets aparecerem aqui.</p>
+				</section>
+				<ul class="list-tweet" id="list-tweet">
+				</ul>
+			</section>
+		</div>
+	</main>
+	<footer></footer>
+	<script src="src/script.js"></script>
+	<script src="src/button.js"></script>
+</body>
 </html>

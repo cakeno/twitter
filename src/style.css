@@ -42,35 +42,45 @@ textarea{
   width: 75%;
   margin: 0 12.5%;
   flex-direction: column;
-  flex-wrap: nowrap;
-}
-.formTweet{
-  padding: 7em 3em 1em 3em;
-  background-color: #E8F5FD;
 }
 .user-profile{
-	display: flex;
-}
-.cover-profile{
-
+	padding: 9em 3em 3em 3em;
+	background-color: white;
+	display: inline-flex;
+	width: 90%;
 }
 .photo-username{
-
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color: #29A3EF;
+}
+.space-username{
+	display: flex;
+	width: 80%;
+	height: 50px;
+	padding: 70px 0 0 30px;
 }
 .name-username{
-
+	flex-grow: 10;
+	justify-content: flex-start;
+	height: 50px;
 }
-.username{
-
+.number-tweets{
+	flex-grow: 1;
+	text-align: center;
+	justify-content: flex-end;
+	height: 50px;
 }
-.numer-tweets{
-	
+.formTweet{
+  padding: 1em 3em;
+  background-color: #E8F5FD;
 }
 .msg-tweet{
   cursor: pointer;
   max-width: inherit;
   min-width: inherit;
-  width: 90%;
+  width: 95%;
   border-radius: 10px;
   padding: 20px;
   border: 2px solid #A6D9F7;
@@ -116,7 +126,7 @@ textarea{
 }
 .timeline-tweet{
   padding: 1em 2em;
-  min-height: 25vw;
+  min-height: 20%;
   max-width: inherit;
   min-width: inherit;
   background-color: white;
